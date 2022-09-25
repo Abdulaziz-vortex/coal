@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
     <link rel="stylesheet" href="./css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coal template</title>
 </head>
 <body>
-    <section class="main-header">
-        <header>
-            <div class="container">
+<section class="main-header">
+    <div class="main-header__border">
+        <header class="header">
+            <div class="d-flex justify-content-between">
                 <div class="header__logo">
                     <img src="./img/logo.png">
                 </div>
@@ -26,10 +30,213 @@
         </header>
         <div class="main-header__heading">
             <div class="container">
-                <h1>Высокакчественный уголь из первых рук</h1>
+                <h1>Высокакчественный уголь <br> из первых рук</h1>
             </div>
             <div class="main-header__headingline"></div>
         </div>
-    </section>
+
+
+        <div class="main-header__contacts">
+            <ul>
+                <li><a href="#"><i class="fas fa-phone"></i>+998934170886</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i>sampleabc@gmail.com</a></li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<section class="about">
+    <div class="container align-items-center d-flex">
+        <div class="about__decore first">
+            <img src="./img/about-decore2.png" alt="">
+        </div>
+
+        <div class="d-flex align-items-center">
+            <div class="about__text">
+                <h1>Кто мы ?</h1>
+                <h2>AGRO EXPORT FAYZ</h2>
+                <h4>Експортёр угля по всему миру</h4>
+            </div>
+            <div class="about__features">
+                <div class="about__features-item">
+                    <i class="fas fa-money-bill-1"></i>
+                    <h4>Низкие и доступные цены</h4>
+                    <span>Вы покупаете уголь на прямую у экспортера</span>
+                </div>
+
+                <div class="about__features-item">
+                    <i class="fas fa-truck-fast"></i>
+                    <h4>Доставка</h4>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+                </div>
+
+                <div class="about__features-item">
+                    <i class="fas fa-briefcase-clock"></i>
+                    <h4>Строгое соблюдение сроков</h4>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="about__decore second">
+            <img src="./img/about-decore1.png" alt="">
+        </div>
+
+    </div>
+</section>
+
+
+<section class="products section">
+    <div class="container">
+        <h1 class="section-header center">Наши продукты</h1>
+
+        <div class="d-flex justify-content-center">
+            <div class="products__item">
+                <img src="./img/frak-1.png" alt="frak-1">
+                <div class="d-flex align-items-start">
+                    <h4>EXKLYZIV KUAL </h4>
+                    <div class="mx-2 badge bg-danger">25 кг</div>
+                </div>
+                <p>Фракция - 8мм- 25мм</p>
+            </div>
+
+            <div class="products__item">
+                <img src="./img/frak-2.png" alt="frak-1">
+                <div class="d-flex align-items-start">
+                    <h4>EXKLYZIV KUAL </h4>
+                    <div class="mx-2 badge bg-danger">25 кг</div>
+                </div>
+                <p>Фракция - 25мм- 50мм</p>
+            </div>
+        </div>
+        <div class="products__table">
+            <h1 class="content-header">Отчет о проверке</h1>
+            <span class="text-muted">Результаты лабораторных исследований (в соответствии с Протоколом испытаний № 399879/21/MAL</span>
+            <table class="table table-stripped table-hover">
+                <thead>
+                <tr class="p-5">
+                    <th scope="col">Параметр</th>
+                    <th scope="col">Метод</th>
+                    <th scope="col">Результат испытаний</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Общее количество влаги #</td>
+                    <td>PN-G 04511:1980 p. 2.3.2.<sup>1</sup></td>
+                    <td>2,4 %</td>
+                </tr>
+                <tr>
+                    <td>Влага в аналитической пробе</td>
+                    <td>PN-G-04560:1998<sup>1</sup></td>
+                    <td>1,21 %</td>
+                </tr>
+                <tr>
+                    <td>Общая сера в рабочем состоянии</td>
+                    <td>PN-G-04584:2001<sup>1</sup></td>
+                    <td>0,56 %</td>
+                </tr>
+                <tr>
+                    <td>Теплотворная способность в рабочем состоянии #</td>
+                    <td>PN-G-04513:1981<sup>1</sup></td>
+                    <td>29177 кДж/кг</td>
+                </tr>
+                <tr>
+                    <td>Летучие детали в рабочем состоянии</td>
+                    <td>PN-G-04516:1998<sup>1</sup></td>
+                    <td>26,50 %</td>
+                </tr>
+
+
+                <tr>
+                    <td>Ясень в рабочем состоянии</td>
+                    <td>PN-G-04560:1998<sup>1</sup></td>
+                    <td>8,16 %</td>
+                </tr>
+
+                <tr>
+                    <td>Теплота сгорания в рабочем состоянии #</td>
+                    <td>PN-G-04513:1981<sup>1</sup></td>
+                    <td>30291 кДж/кг</td>
+                </tr>
+                <tr>
+                    <td>Спекаемость по Роги #</td>
+                    <td>PN-G-04518:1981<sup>1</sup></td>
+                    <td>10</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <ul class="list-unstyled fst-italic">
+                <li><sup>1</sup>Исследование выполнено лабораторией J.S. Гамильтон Польша Sp. о.о. в Тыхах,
+                    аккредитованной в этом отношении PCA, № AB 079.
+                </li>
+                <li># Обозначение по устаревшему стандарту</li>
+                <li><sup>.</sup>Обозначение по стандарту изъято из коллекции ПКН без замены</li>
+            </ul>
+
+        </div>
+
+
+    </div>
+</section>
+
+
+<section class="how-we-work section">
+    <div class="how-we-work__overlay"></div>
+    <div class="how-we-work__wrapper">
+        <h1 class="section-header center dark">Как мы работаем</h1>
+
+        <div class="how-we-work__item-wrapper">
+            <div class="how-we-work__item">Получаем заказ<i class="fas fa-chevron-right"></i></div>
+            <div class="how-we-work__item">Собираем данные<i class="fas fa-chevron-right"></i></div>
+            <div class="how-we-work__item">Заключаем договор<i class="fas fa-chevron-right"></i></div>
+            <div class="how-we-work__item">Достовляем продукт<i class="fas fa-chevron-right"></i></div>
+            <div class="how-we-work__item">Подписываем акты<i class="fas fa-chevron-right"></i></div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="partners section">
+    <div class="container">
+        <div class="about__decore first">
+            <img src="./img/about-decore2.png" alt="">
+        </div>
+
+        <div class="partners__text">
+            <h1>Наши партнеры</h1>
+            <h4>Експортёр угля по всему миру</h4>
+            <div class="partners__features d-flex">
+                <div class="partners__features-item">
+                    <h4><span class="badge bg-dark text-light">UAB</span>Mawi</h4>
+                </div>
+
+                <div class="partners__features-item">
+                    <h4><span class="badge bg-dark text-light">UAB</span>Viner</h4>
+                </div>
+                <div class="partners__features-item">
+                    <h4><span class="badge bg-dark text-light">UAB</span>MEDREKA</h4>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+        <div class="about__decore second">
+            <img src="./img/partners-decore2.png" alt="">
+        </div>
+
+    </div>
+</section>
+
 </body>
 </html>
