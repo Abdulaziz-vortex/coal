@@ -32,7 +32,7 @@ $main : #dc3545;
                         height: 35px;
                         display: flex;
                         align-items: center;
-                        border-radius: 100%;
+                        border-radius: 6px;
                         justify-content: center;
                         margin-right: 10px;
                     }
@@ -155,7 +155,7 @@ $main : #dc3545;
             }
             & td{
                 padding: 15px;
-                color: #666;
+                color: #222;
             }
         }
     }
@@ -182,7 +182,7 @@ $main : #dc3545;
 }
 
 .about{
-    height: 80vh;
+    height: 85vh;
     position: relative;
     background: #efefef;
     & .container{
@@ -297,7 +297,7 @@ $main : #dc3545;
 
 
 .partners{
-    height: 70vh;
+    height: 85vh;
     position: relative;
     background: #efefef;
     & .container{
@@ -364,4 +364,79 @@ $main : #dc3545;
         position: absolute;
 
     }
+}
+
+
+.contacts{
+    position: relative;
+    &__text{
+        flex-basis: 50%;
+        & h1{
+            margin-bottom: 10px;
+        }
+    }
+    &__map{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 50%;
+    }
+    & ul{
+        margin-left: 0px;
+        padding-left: 0px;
+        margin-top: 40px;
+        & li{
+            list-style: none;
+            padding: 15px 0px;
+            & a{
+                display: flex;
+                align-items: center;
+                & i{
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 6px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 10px;
+                    color: rgba(255,255,255,0.8);
+                }
+                text-decoration: none;
+                color: #222;
+            }
+        }
+    }
+}
+
+.footer{
+    width: 100%;
+    background: #222;
+    color: #fff;
+
+    &__menu{
+        & ul{
+            display: flex;
+            & li{
+                list-style: none;
+                padding: 0px 20px;
+                & a{
+                    text-decoration: none;
+                    color: #999;
+                }
+            }
+        }
+    }
+    &__copyright{
+        margin-top: 20px;
+        color: #999;
+    }
+}
+
+
+//call to action section
+
+.call-action{
+    position: fixed;
+    bottom: 150px;
+    right: 0px;
 }

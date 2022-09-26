@@ -44,7 +44,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 100%;
+  border-radius: 6px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -176,7 +176,7 @@
 }
 .products__table table td {
   padding: 15px;
-  color: #666;
+  color: #222;
 }
 
 .section-header {
@@ -201,7 +201,7 @@
 }
 
 .about {
-  height: 80vh;
+  height: 85vh;
   position: relative;
   background: #efefef;
 }
@@ -325,7 +325,7 @@
 }
 
 .partners {
-  height: 70vh;
+  height: 85vh;
   position: relative;
   background: #efefef;
 }
@@ -401,4 +401,85 @@
 }
 .partners__decore.second img {
   width: 600px;
+}
+
+.contacts {
+  position: relative;
+}
+.contacts__text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+.contacts__text h1 {
+  margin-bottom: 10px;
+}
+.contacts__map {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 50%;
+}
+.contacts ul {
+  margin-left: 0px;
+  padding-left: 0px;
+  margin-top: 40px;
+}
+.contacts ul li {
+  list-style: none;
+  padding: 15px 0px;
+}
+.contacts ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #222;
+}
+.contacts ul li a i {
+  width: 35px;
+  height: 35px;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer {
+  width: 100%;
+  background: #222;
+  color: #fff;
+}
+.footer__menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer__menu ul li {
+  list-style: none;
+  padding: 0px 20px;
+}
+.footer__menu ul li a {
+  text-decoration: none;
+  color: #999;
+}
+.footer__copyright {
+  margin-top: 20px;
+  color: #999;
+}
+
+.call-action {
+  position: fixed;
+  bottom: 150px;
+  right: 0px;
 }

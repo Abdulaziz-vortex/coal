@@ -7,11 +7,12 @@
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./fontawesome/css/all.css">
     <link rel="stylesheet" href="./css/main.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coal template</title>
 </head>
 <body>
-<section class="main-header">
+<section class="main-header" id="main">
     <div class="main-header__border">
         <header class="header">
             <div class="d-flex justify-content-between">
@@ -20,10 +21,11 @@
                 </div>
                 <div class="header__menu">
                     <ul class="header__nav">
-                        <li class="header__li"><a href="#">Главная</a></li>
-                        <li class="header__li"><a href="#">О нас</a></li>
-                        <li class="header__li"><a href="#">Партнеры</a></li>
-                        <li class="header__li"><a href="#">Контакты</a></li>
+                        <li class="header__li"><a href="#main">Главная</a></li>
+                        <li class="header__li"><a href="#about">О нас</a></li>
+                        <li class="header__li"><a href="#products">Наши продукты</a></li>
+                        <li class="header__li"><a href="#partners">Партнеры</a></li>
+                        <li class="header__li"><a href="#contacts">Контакты</a></li>
                     </ul>
                 </div>
             </div>
@@ -33,6 +35,7 @@
                 <h1>Высокакчественный уголь <br> из первых рук</h1>
             </div>
             <div class="main-header__headingline"></div>
+            <a href="" class="btn btn-lg fw-bold btn-danger my-5 mx-3"><i class="fas fa-phone mx-2"></i>Заказать</a>
         </div>
 
 
@@ -46,7 +49,7 @@
     </div>
 </section>
 
-<section class="about">
+<section class="about" id="about">
     <div class="container align-items-center d-flex">
         <div class="about__decore first">
             <img src="./img/about-decore2.png" alt="">
@@ -90,7 +93,7 @@
 </section>
 
 
-<section class="products section">
+<section class="products section" id="products">
     <div class="container">
         <h1 class="section-header center">Наши продукты</h1>
 
@@ -113,58 +116,61 @@
                 <p>Фракция - 25мм- 50мм</p>
             </div>
         </div>
+        <div class="d-flex justify-content-center my-5">
+            <a href="" class="btn btn-lg fw-bold btn-danger"><i class="fas fa-phone mx-2"></i>Заказать</a>
+        </div>
         <div class="products__table">
             <h1 class="content-header">Отчет о проверке</h1>
             <span class="text-muted">Результаты лабораторных исследований (в соответствии с Протоколом испытаний № 399879/21/MAL</span>
             <table class="table table-stripped table-hover">
                 <thead>
                 <tr class="p-5">
-                    <th scope="col">Параметр</th>
-                    <th scope="col">Метод</th>
-                    <th scope="col">Результат испытаний</th>
+                    <th scope="col">Параметр / Parametr</th>
+                    <th scope="col">Метод / Metoda</th>
+                    <th scope="col">Результат испытаний / Wynik badań</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td>Общее количество влаги #</td>
+                    <td>Общее количество влаги # / Wilgoć całkowita#</td>
                     <td>PN-G 04511:1980 p. 2.3.2.<sup>1</sup></td>
                     <td>2,4 %</td>
                 </tr>
                 <tr>
-                    <td>Влага в аналитической пробе</td>
+                    <td>Влага в аналитической пробе / Wilgoć w próbce analitycznej</td>
                     <td>PN-G-04560:1998<sup>1</sup></td>
                     <td>1,21 %</td>
                 </tr>
                 <tr>
-                    <td>Общая сера в рабочем состоянии</td>
+                    <td>Общая сера в рабочем состоянии / Siarka całkowita w stanie roboczym</td>
                     <td>PN-G-04584:2001<sup>1</sup></td>
                     <td>0,56 %</td>
                 </tr>
                 <tr>
-                    <td>Теплотворная способность в рабочем состоянии #</td>
+                    <td>Теплотворная способность в рабочем состоянии # / Wartość opałowa w stanie roboczym#</td>
                     <td>PN-G-04513:1981<sup>1</sup></td>
                     <td>29177 кДж/кг</td>
                 </tr>
                 <tr>
-                    <td>Летучие детали в рабочем состоянии</td>
+                    <td>Летучие детали в рабочем состоянии / Części lotne w stanie roboczym</td>
                     <td>PN-G-04516:1998<sup>1</sup></td>
                     <td>26,50 %</td>
                 </tr>
 
 
                 <tr>
-                    <td>Ясень в рабочем состоянии</td>
+                    <td>Ясень в рабочем состоянии / Popiół w stanie roboczym</td>
                     <td>PN-G-04560:1998<sup>1</sup></td>
                     <td>8,16 %</td>
                 </tr>
 
                 <tr>
-                    <td>Теплота сгорания в рабочем состоянии #</td>
+                    <td>Теплота сгорания в рабочем состоянии # / Ciepło spalania w stanie roboczym#</td>
                     <td>PN-G-04513:1981<sup>1</sup></td>
                     <td>30291 кДж/кг</td>
                 </tr>
                 <tr>
-                    <td>Спекаемость по Роги #</td>
+                    <td>Спекаемость по Роги # / Zdolność spiekania wg Rogi#</td>
                     <td>PN-G-04518:1981<sup>1</sup></td>
                     <td>10</td>
                 </tr>
@@ -202,8 +208,7 @@
 </section>
 
 
-
-<section class="partners section">
+<section class="partners section" id="partners">
     <div class="container">
         <div class="about__decore first">
             <img src="./img/about-decore2.png" alt="">
@@ -213,17 +218,23 @@
             <h1>Наши партнеры</h1>
             <h4>Експортёр угля по всему миру</h4>
             <div class="partners__features d-flex">
+
                 <div class="partners__features-item">
-                    <h4><span class="badge bg-dark text-light">UAB</span>Mawi</h4>
+                    <h4><span class="badge bg-danger text-light">UAB</span>MEDREKA</h4>
+                    <span>Оффициальный представитель</span>
                 </div>
 
                 <div class="partners__features-item">
-                    <h4><span class="badge bg-dark text-light">UAB</span>Viner</h4>
-                </div>
-                <div class="partners__features-item">
-                    <h4><span class="badge bg-dark text-light">UAB</span>MEDREKA</h4>
+                    <h4><span class="badge bg-danger text-light">UAB</span>Mawi</h4>
+                    <span>Диллер по импорту углья</span>
+
                 </div>
 
+                <div class="partners__features-item">
+                    <h4><span class="badge bg-danger text-light">UAB</span>Viner</h4>
+                    <span>Диллер по импорту углья</span>
+
+                </div>
 
 
             </div>
@@ -232,11 +243,57 @@
 
 
         <div class="about__decore second">
-            <img src="./img/partners-decore2.png" alt="">
+            <img src="./img/partners-decore.png" alt="">
         </div>
 
     </div>
 </section>
+
+<section class="contacts section" id="contacts">
+    <div class="d-flex container">
+        <div class="contacts__text">
+            <h1 class="section-header">Наши контакты</h1>
+            <span>Список телефонных номеров нашей компании и почтовых адресов</span>
+            <ul>
+                <li><a href="tel:+998918917477"><i class="fas fa-phone bg-success"></i>+998918917477</a></li>
+                <li><a href="tel:+998950916262"><i class="fas fa-phone bg-success"></i>+998950916262</a></li>
+                <li><a href="#"><i class="fas fa-envelope bg-dark"></i>Usmonjonodilov0880@gmail.com</a></li>
+                <li><a href="#"><i class="fas fa-envelope bg-dark"></i>Asadbekodiljonov@gmail.com</a></li>
+                <li><a href="#"><i class="fas fa-envelope bg-dark"></i>ugol.export.fayz@mail.ru</a></li>
+                <!--                <li><a href="#"><i class="fas fa-map-pin"></i>фвфвывфывфыы</a></li>-->
+            </ul>
+        </div>
+        <div class="contacts__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6013.786732308092!2d71.99378007934574!3d41.09317644572207!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x307dd1799616ca43!2zNDHCsDA1JzQwLjQiTiA3McKwNTknNDYuOSJF!5e0!3m2!1sru!2s!4v1664194179215!5m2!1sru!2s"
+                    width="100%" height="640" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+
+<footer class="footer section">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="footer__logo">
+            <img src="./img/logo.png" alt="">
+            <div class="footer__copyright">&copy; Copyright all rights reserved 2022</div>
+        </div>
+        <div class="footer__menu">
+            <ul class="">
+                <li class=""><a href="#main">Главная</a></li>
+                <li class=""><a href="#about">О нас</a></li>
+                <li class=""><a href="#products">Наши продукты</a></li>
+                <li class=""><a href="#partners">Партнеры</a></li>
+                <li class=""><a href="#contacts">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<div class="call-action">
+    <a href="" class="btn btn-lg fw-bold btn-danger"><i class="fas fa-phone mx-2"></i>Заказать</a>
+</div>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="./js/map.js"></script>
 
 </body>
 </html>
